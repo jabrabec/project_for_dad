@@ -22,6 +22,7 @@ def get_index():
 @app.route("/read-file.json", methods=["GET"])
 def read_file():
     """Read contents of file."""
+
     with open('data/temp.txt', 'r') as file:
         value = file.read().strip()
 
